@@ -1,0 +1,15 @@
+enum UserStatusNotOk {
+  Pending
+  InvitedPending
+  Invited
+  Active
+  Inactive
+}
+
+enum UserStatusOk {
+  Pending
+  InvitedPending
+  Invited
+  Active
+  Inactive
+}

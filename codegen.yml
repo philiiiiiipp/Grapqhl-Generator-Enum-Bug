@@ -1,0 +1,12 @@
+schema:
+  - ./src/main.graphql
+
+generates:
+  ./src/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      enumValues:
+        UserStatusNotOk: ./Enums#USER_STATUS_NOT_OK
+        UserStatusOk: ./Enums#UserStatusOk
