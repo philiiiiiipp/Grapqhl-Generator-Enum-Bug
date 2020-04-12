@@ -1,4 +1,4 @@
-import { USER_STATUS_NOT_OK, UserStatusOk } from './Enums';
+import { USER_STATUS_NOT_OK as UserStatusNotOk, UserStatusOk } from './Enums';
 export type Maybe<T> = T | null;
 
 /** All built-in and custom scalars, mapped to their actual values */
