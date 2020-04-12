@@ -4,9 +4,12 @@ schema:
 generates:
   ./src/types.ts:
     plugins:
+      - add: "import { USER_STATUS_NOT_OK, UserStatusOk } from './Enums';"
       - typescript
       - typescript-operations
     config:
       enumValues:
-        UserStatusNotOk: ./Enums#USER_STATUS_NOT_OK
-        UserStatusOk: ./Enums#UserStatusOk
+        # UserStatusNotOk: ./Enums#USER_STATUS_NOT_OK
+        # UserStatusOk: ./Enums#UserStatusOk
+        UserStatusNotOk: 'this.USER_STATUS_NOT_OK'
+        UserStatusOk: '#UserStatusOk'

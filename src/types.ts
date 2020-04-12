@@ -1,7 +1,6 @@
-import { USER_STATUS_NOT_OK } from './Enums';
-import UserStatusNotOk = USER_STATUS_NOT_OK;
-import { UserStatusOk } from './Enums';
+import { USER_STATUS_NOT_OK, UserStatusOk } from './Enums';
 export type Maybe<T> = T | null;
+
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: string;
@@ -11,7 +10,19 @@ export type Scalars = {
   Float: number;
 };
 
-export { UserStatusNotOk };
+export enum UserStatusNotOk {
+  Pending = 'Pending',
+  InvitedPending = 'InvitedPending',
+  Invited = 'Invited',
+  Active = 'Active',
+  Inactive = 'Inactive'
+}
 
-export { UserStatusOk };
+export enum UserStatusOk {
+  Pending = 'Pending',
+  InvitedPending = 'InvitedPending',
+  Invited = 'Invited',
+  Active = 'Active',
+  Inactive = 'Inactive'
+}
 
