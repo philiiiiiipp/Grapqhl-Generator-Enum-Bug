@@ -11,5 +11,5 @@ generates:
       enumValues:
         # UserStatusNotOk: ./Enums#USER_STATUS_NOT_OK
         # UserStatusOk: ./Enums#UserStatusOk
-        UserStatusNotOk: 'this.USER_STATUS_NOT_OK'
-        UserStatusOk: '#UserStatusOk'
+        UserStatusNotOk: USER_STATUS_NOT_OK
+        UserStatusOk: UserStatusOk
